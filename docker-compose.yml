@@ -1,0 +1,9 @@
+meteor:
+  build: .
+  #dockerfile: Dockerfile-ci
+  ports:
+    - "3000:3000"
+  environment:
+    PORT: "3000"
+    ROOT_URL: "http://localhost:3000"
+    MONGO_URL: "mongodb://user:pass@mongo.server:port/database"

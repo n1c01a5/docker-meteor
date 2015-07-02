@@ -1,0 +1,8 @@
+*~
+*.swp
+.DS_Store
+.dockerignore
+.git
+.gitignore
+README.md
+app/.meteor/local
