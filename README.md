@@ -64,7 +64,13 @@ FROM jadsonlourenco/docker-meteor-base
 # Clone your repository - Comment this if use next method
 RUN git clone https://github.com/meteor/simple-todos.git /home/app/meteor/
 
-# Or add your repository as file - Uncomment this block and comment the Git method
+# Or add your repository as file - Uncomment this block and comment the others
+#ADD https://github.com/meteor/simple-todos/archive/master.tar.gz /home/app/
+#RUN mkdir -p /home/app/meteor/ && \
+#    tar -xzf /home/app/master.tar.gz -C /home/app/meteor/ --strip-components 1 && \
+#    rm /home/app/master.tar.gz
+
+# Your repository as ZIP file - Uncomment this block and comment the others
 #RUN wget https://github.com/meteor/simple-todos/archive/master.zip && \
 #    unzip master.zip -d /home/app/ && \
 #    mv /home/app/simple-todos-master/ /home/app/meteor/
